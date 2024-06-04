@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trái cây mùa Đông</title>
+    <style type="text/css">
+body{
+    font-family: Arial, Tahoma, Wingdings;
+    font-size: 16px;
+}
+#main{
+    width: auto;
+    padding: 0;
+    margin-left: auto;
+}
+#head{
+    height: 160px;
+    background-color: #f1f1f1;
+    border: 0px solid #CDCDCD;
+    line-height: 85px;
+}
+#head-1{
+    min-height: 20px;
+    line-height: 20px;
+    color: #da05ff;
+    border: 0px solid #CDCDCD;
+    padding-top: 15px;
+}
+#head-link{
+    background: #ebebeb;
+    max-height: 20px;
+    line-height: 20px;
+    border: 0px solid #CDCDCD;
+    margin-bottom: 35px;
+    clear: both;
+}
+#left{
+    width: 234px;
+    min-height: 400px;
+    border: 0px solid #CDCDCD;
+    float:left;
+    margin-bottom: 5px;
+}
+#content{
+    width: 1208px;
+    min-height: 1400px;
+    border: 1px solid #CDCDCD;
+    float:right;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#footer{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    clear: both;
+    border: 1px solid #CDCDCD;
+    color: white;
+    background-color: black;
+}
+#head-link ul {
+    background: #f1f1f1;
+    list-style-type: none;
+    text-align: center;
+    padding-left: 200px;
+}
+#head-link li {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    border: 0px solid #CDCDCD;
+}
+#head-link ul li a {
+    color: #050505;
+    text-decoration: none;
+    display: block;
+}
+#head-link ul li a:hover {
+    background: white;
+    color: #d473fa;
+}
+#head-link ul li > .sub-head-link { 
+    display: none; 
+    position: absolute; 
+    padding: 0px 0px 0px 0px;
+    font-size: 14px;
+} 
+#head-link li {
+    position: relative;
+}
+#head-link ul li:hover .sub-head-link { 
+    background: #F1F1F1;
+    color: #d473fa;
+    display: block;
+}
+.sub-head-link { 
+    display: none; 
+    position: absolute; 
+} 
+#khung-left{
+    width: 234px;
+    min-height: 220px;
+    border: 1px solid #CDCDCD;
+    float:left;
+    margin-bottom: 5px;
+}
+#dong-left{
+    background: #f7be4a; 
+    color: white;   
+    width: 214px;
+    min-height: 50px;
+    line-height: 50px;
+    border: 1px solid #CDCDCD;
+    clear: both;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+#dong-left a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+#dong-left b a:hover {
+    color: #3c1a8a;
+    text-decoration: none;
+    display: block;
+}
+#dong-left1 a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+#dong-left1 a:hover {
+    background: white;
+    color: red;
+}
+#dong-left2 a {
+    background: #f1f1f1;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#dong-left2 a:hover {
+    background: white;
+    color: red;
+}
+#anh-left img{
+    width: 232px;
+    max-height: 100px;
+    border: 0px solid #CDCDCD;
+    clear: both;
+    margin-bottom: 0px;
+}
+#dong-content{
+    background: #f7be4a;
+    color: white;
+    width: 1186px;
+    min-height: 50px;
+    line-height: 50px;
+    border: 1px solid #CDCDCD;
+    float:left;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+#Cot-content1{
+    width: 1100px;
+    min-height: 200px;
+    line-height: 200px;    
+    border: 0px solid #CDCDCD;
+    float:left;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+#dong-content1{
+    width: 1100px;
+    max-height: 30px;
+    line-height: 30px;
+    border: 0px solid #CDCDCD;
+    margin-bottom: 5px;
+    clear: both;
+}
+#dong-content1 b{
+    font-size: 18px;
+}
+#dong-content2{
+    width: 1100px;
+    min-height: 30px;
+    line-height: 30px;
+    border: 0px solid #CDCDCD;
+    margin-bottom: 5px;
+    clear: both;
+}
+#vedautrang{
+    width: 1100px;
+    max-height: 30px;
+    line-height: 30px;
+    border: 0px solid #CDCDCD;
+    margin-bottom: 5px;
+    text-align: right;
+    clear: both;
+}
+#nutve{
+    width: 30px;
+    max-height: 30px;
+    line-height: 30px;
+    background: #bdbdbd;
+    border: 0px solid #CDCDCD;
+    float:right;
+    text-align: center;
+}
+#nutve a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+#nutve a:hover {
+    background: black;
+    color: white;
+}
+#anh{
+    width: 800px;
+    min-height: 400px;
+    line-height: 400px;
+    border: 1px solid #CDCDCD;
+    margin: 0px 150px 5px 150px;
+    clear: both;
+}
+#anh img {
+    width: 800px;
+    max-height: 400px;
+    display: block;
+}
+</style>
+</head>
+<body>
+<a name="dt">
+<div id="main">
+    <div id="head">  
+        <a href="Bốn mùa Trái cây.html">        
+        <img src="anh.jpg" width="100%" height="100%"> 
+        </a>
+    </div>
+    <div id="head-1"> 
+        <marquee>
+        Chào mừng đến với Website Bốn mùa trái cây
+        </marquee>        
+    </div>
+    <div id="head-link"><b>
+        <ul>
+            <a href="Bốn mùa Trái cây.html">
+            <img src="avata.jpg" width=50px height=50px align="center">
+            </a>
+                <li><a href="Bốn mùa Trái cây.html">Trang chủ</a></li>
+                <li><a href="#">Danh sách ▼</a>
+                    <ul class="sub-head-link">
+                        <li><a href="Trái cây mùa Xuân.html">Trái cây mùa Xuân</a></li>
+                        <li><a href="Trái cây mùa Hạ.html">Trái cây mùa Hạ</a></li>
+                        <li><a href="Trái cây mùa Thu.html">Trái cây mùa Thu</a></li>
+                        <li><a href="Trái cây mùa Đông.html">Trái cây mùa Đông</a></li>
+                    </ul>
+                </li>
+                <li><a href="Liên hệ.html">Liên hệ</a></li>
+               <li><a href="Đăng nhập.html">Đăng nhập</a></li>
+               <li><a href="Đăng ký.html">Đăng ký</a></li>
+            </ul></b>
+    </div>
+    <div id="left">
+        <div id="khung-left">
+        <div id="dong-left">
+           <b>‖ Mục lục</b>
+        </div>
+        <div id="dong-left1">
+            <ol type="I">
+                <li><a href="#T10">Tháng 10</a>
+                    <ol type="1">
+                        <li><a href="#I.1">Hồng Đà Lạt</a></li>
+                        <li><a href="#I.2">Cam</a></li>
+                        <li><a href="#I.3">Hồng xiêm</a></li>
+                    </ol>
+                </li>
+                <li><a href="#T11">Tháng 11</a>
+                    <ol type="1">
+                        <li><a href="#II.1">Quýt vàng Bắc Sơn</a></li>
+                        <li><a href="#II.2">Mít nghệ</a></li>
+                        <li><a href="#II.3">Cóc chín</a></li>
+                    </ol>
+                </li>
+                <li><a href="#T12">Tháng 12</a>
+                    <ol type="1">
+                        <li><a href="#III.1">Táo ta</a></li>
+                        <li><a href="#III.2">Nho Ninh Thuận</a></li>
+                        <li><a href="#III.3">Hồng giòn Đà Lạt</a></li>
+                    </ol>
+                </li>
+            </ol>
+        </div> 
+        </div>
+        <div id="khung-left">
+            <div id="dong-left">
+                <b><a href="bai viet moi nhat.html"> Bài viết mới nhất</a></b>
+            </div>
+            <div id="dong-left2">
+                <a href="Top 5 loại trái cây tốt nhất cho sức khỏe.html">
+                    <div id="anh-left">
+                        <img src="top 5 trai cay tot cho suc khoe.png">
+                    </div>
+                    Top 5 loại trái cây tốt nhất cho sức khỏe
+                </a>
+            </div>
+            <div id="dong-left2">
+                <a href="Top 5 lợi ích sức khỏe của việc ăn trái cây mỗi ngày.html">
+                    <div id="anh-left">
+                        <img src="top 5 loi ich suc khoe.jpg">
+                    </div>
+                    Top 5 lợi ích sức khỏe của việc ăn trái cây mỗi ngày
+                </a>
+            </div>
+        </div>   
+    </div>
+    <div id="content">
+        <div id="dong-content"><b>‖ Trái cây mùa Đông</b>
+        </div>
+        <div id="Cot-content1">
+            <div id="anh">
+                <img src="trai-cay-mua-dong.jpg">
+            </div>
+            <div id="dong-content1">
+                <a name="T10">
+                <b>I. Tháng 10</b>
+            </div>
+            <div id="dong-content1">
+                <a name="I.1">
+                <b>1. Hồng Đà Lạt</b>
+            </div>
+            <div id="dong-content2">
+                Hồng Đà Lạt trái to vừa lòng bàn tay, khi chín chuyển sang màu đỏ thẫm. Phần thịt khá mềm nên chỉ cần bóp nhẹ là đã để lộ phần cơm thơm dịu, ăn vào ngọt lịm nhưng không gắt. Từ đầu tháng 10, các vườn hồng ở Đà Lạt đã bắt đầu cho thu hoạt đợt trái đầu tiên. 
+                <p>Tuy nhiên loại quả này cũng rất dễ dập, hỏng nên dễ bị cho thêm chất bảo quản. Vì vậy khi mua loại quả này bạn nên mua ở những nơi uy tín, rửa thật kĩ với nước trước khi ăn để tránh tiếp xúc chất bảo quản với cơ thể.</p>
+            </div>   
+            <div id="anh">
+                <img src="hong da lat.jpg">
+            </div>        
+            <div id="dong-content1">
+                <a name="I.2">
+                <b>2. Cam</b>
+            </div>
+            <div id="dong-content2">
+                Cam là loại quả hỗ trợ tăng cường sức đề kháng, cung cấp vitamin C, và giải nhiệt hiệu quả. Nước cam không chỉ giúp hồi phục sức khỏe mà còn giảm triệu chứng cảm cúm nhanh chóng.
+            </div>
+            <div id="anh">
+                <img src="cam2.jpg">
+            </div>
+            <div id="dong-content1">
+                <a name="I.3">
+                <b>3. Hồng xiêm</b>
+            </div>
+            <div id="dong-content2">
+                Hồng xiêm là quả ngọt, thơm ngon, giàu vitamin. Nó có tác dụng làm lợi tiểu, giúp đào thải độc tố qua đường tiểu. Vitamin C trong hồng xiêm giúp chống ho và cảm lạnh. Ăn đều hồng xiêm sẽ giúp phòng và điều trị bệnh nhiễm trùng lạnh mãn tính.
+                <P>Hồng xiêm có tác dụng như một loại thuốc an thần, giúp giảm căng thẳng và làm dịu dàng hệ thần kinh. Đối với những người gặp vấn đề về mất ngủ hoặc căng thẳng trong công việc, việc ăn hồng xiêm thường xuyên là một giải pháp hiệu quả.</P>
+            </div>
+            <div id="anh">
+                <img src="hong xiem2.jpg">
+            </div>
+            <div id="dong-content1">
+                <a name="T11">
+                <b>II. Tháng 11</b>
+            </div>
+            <div id="dong-content1">
+                <a name="II.1">
+                <b>1. Quýt vàng Bắc Sơn</b>
+            </div>
+            <div id="dong-content2">
+                Quýt Bắc Sơn có hai loại là quả tròn và quả dẹt. Quýt quả tròn khi chín có màu vàng ươm, vỏ mỏng, dóc vỏ, ít sơ, vị ngọt đậm, thơm. Quýt quả dẹt có hai đầu lõm, hình hơi dẹt, khi chín có màu vàng ươm, vỏ dày hơn, khó bóc, vị chua và cũng ít sơ.
+            </div>
+            <div id="anh">
+                <img src="quyt vang bac son.jpg">
+            </div>
+            <div id="dong-content1">
+                <a name="II.2">
+                <b>2. Mít nghệ</b>
+            </div>
+            <div id="dong-content2">
+                Mít là loại quả khoái khẩu của nhiều người bởi độ ngọt, mùi thơm rất đặc trưng, ăn một lần là nhớ. Với những người mê mít thì giữa tháng 11 bắt đầu là mùa mít nghệ Tiền Giang. 
+                <p>Mít nghệ Tiền Giang có đặc điểm là trái rất to, có những trái mít nặng hơn 10kg là chuyện bình thường. Vì to thế nên với mít nghệ, người ta thường mua theo cân, theo miếng chứ hiếm ai mua cả quả. Và đúng như cái tên mít nghệ, màu của loại mít này có màu vàng đậm như nghệ rất bắt mắt.</p>
+                <p>Ai đã ăn thử mít nghệ Tiền Giang hẳn rất ấn tượng với mùi thơm và vị ngọt của loại trái này. Hương thơm vô cùng quyến rũ, múi dày ngọt đậm đà, ít xơ, múi dày, thậm chí đã phần xơ cũng dày và có vị ngọt.</p>
+            </div>
+            <div id="anh">
+                <img src="mit nghe.jpg">
+            </div>
+            <div id="dong-content1">
+                <a name="II.3">
+                <b>3. Cóc chín</b>
+            </div>
+            <div id="dong-content2">
+                Cóc có thể ăn được từ khi còn là dạng bao tử cho đến cóc xanh, cóc chín… nhưng cóc chín có khả năng gây thương nhớ nhất bởi không chỉ đặc biệt về vị mà lúc này cóc có vị thơm vô cùng đặc trưng. Tháng 11 là thời điểm cóc chín rộ nhất.
+                <p>Những trái cóc chín vàng tươi mang lột vỏ, xắt miếng vừa ăn hoặc có thể để cả quả mà nhâm nhi từng chút một, vị chua ngọt ngon lành khiến ai cũng ứa nước miếng và không kìm được lòng.</p>
+            </div>
+            <div id="anh">
+                <img src="coc chin.jpg">
+            </div>
+            <div id="dong-content1">
+                <a name="T12">
+                <b>III. Tháng 12</b>
+            </div>
+            <div id="dong-content1">
+                <a name="III.1">
+                <b>1. Táo ta</b>
+            </div>
+            <div id="dong-content2">
+                Mỗi khi mùa đông đến, thật khó quên hương vị chua chua, ngọt ngọt của những quả táo nhỏ màu xanh. Thức quả này có lẽ đã gắn liền với tuổi thơ của không ít người, đặc biệt là những người con xứ Bắc.
+                <p>Táo ta có chứa rất nhiều vitamin. Cứ 100 gr táo ta sẽ có khoảng 400 – 600 vitamin C, cao hơn 7 đến 10 lần lượng vitamin C có trong quả cam, quýt. Ngoài ra, táo ta còn chưa nhiều chất chống oxy hóa, tốt cho sức khỏe và làn da, làm giảm nếp nhăn, khô, đỏ, sưng, khắc phục làn da bị cháy nắng và giúp da luôn khỏe đẹp.</p>
+            </div>
+            <div id="anh">
+                <img src="tao ta.jpg">
+            </div>
+            <div id="dong-content1">
+                <a name="III.2">
+                <b>2. Nho Ninh Thuận</b>
+            </div>
+            <div id="dong-content2">
+                Nếu có dịp ghé đến Ninh Thuận, bạn nhất định không được bỏ lỡ cơ hội thưởng thức nho Ninh Thuận trứ danh.
+                <p>Nho rất tốt cho sức khỏe, giàu mangan, chất xơ và ít calo, có nhiều công dụng tuyệt vời cho sức khỏe. Nho chứa chất flavonoids thanh trừ gốc tự do và giúp cơ thể chống lão hóa. Nho cũng rất giàu chất chống oxy hóa resveratrol, ngăn hình thành cục máu đông và hỗ trợ ngăn ngừa bệnh tim mạch. Đặc biệt nho có thể ngăn chặn tế bào ung thư di căn, phòng ngừa tế bào ung thư vú hay ung thư ruột và chống lại những cơn đau dạ dày.</p>
+            </div>
+            <div id="anh">
+                <img src="nho ninh thuan.jpg">
+            </div>
+            <div id="dong-content1">
+                <a name="III.3">
+                <b>3. Hồng giòn Đà Lạt</b>
+            </div>
+            <div id="dong-content2">
+                Trái cây này có rất giàu chất xơ, giúp cho hệ tiêu hóa hoạt động khỏe mạnh, chứa vitamin C, chất chống oxy giúp phòng chống ung thư và giảm nguy cơ phát triển các khối u, ngăn ngừa lão hóa sớm của da, giúp da căng tràn sức sống.
+                <p>Bên cạnh đó thì hồng giòn Đà Lạt còn rất có lợi cho mắt, giúp tăng cường thị lực, cung cấp vitamin A cho mắt sáng. Hồng giòn Đà Lạt cũng được dùng trong điều trị huyết áp cao, cải thiện máu lưu thông và giảm đau bụng, phòng chống bệnh cảm cúm mùa lạnh.</p>
+                <p>Tuy hồng giòn tuy rất bổ dưỡng nhưng cũng là một trong những loại quả dễ bị phun thuốc bảo quản thực vật để giữ quả tươi ngon hơn. Vì vậy bạn nên chọn mua đúng mùa và ở những nơi uy tín để giảm thiểu tối đa lượng thuốc trừ sâu, chất kích thích vào trong cơ thể. Hãy luôn đảm bảo bạn đã rửa sạch chúng trước khi ăn.</p>
+            </div>
+            <div id="anh">
+                <img src="hong gion da lat.jpg">
+            </div>
+            <div id="vedautrang">
+                <div id="nutve">
+                    <a href="#dt"><b></b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Cảm ơn bạn đã ghé thăm Bốn Mùa Trái Cây và ủng hộ chúng tôi!
+    </div>
+</div>
+</body>
+</html>

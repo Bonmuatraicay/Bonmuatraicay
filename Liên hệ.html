@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Liên hệ</title>
+     <Script language=JavaScript>
+function kiemtra(){
+var ht=document.lienhe.txthoten.value;
+var dc=document.lienhe.dc.value;
+var email=document.lienhe.em.value;
+var sdt=document.lienhe.sdt.value;
+var nd=document.lienhe.nd.value
+if(ht.length==0){
+alert("Vui lòng nhập họ tên");
+document.lienhe.txthoten.focus();
+return false;
+}
+if(dc.length==0){
+alert("Bạn chưa điền địa chỉ");
+document.lienhe.dc.focus();
+return false;
+}
+re=/\w+@\w+\.\w+/;
+if (email==""){
+alert("Bạn chưa nhập email");
+document.lienhe.em.value="";
+document.lienhe.em.focus();
+return false
+}
+else if(re.test(email)==false){
+alert("Email không đúng định dạng!")
+document.lienhe.em.focus();
+return false
+}
+if(sdt.length==0){
+alert("Bạn chưa điền Số điện thoại");
+document.lienhe.sdt.focus();
+return false;
+}
+if(isNaN(sdt)==true){
+alert("Vui lòng điền Số điện thoại bằng số");
+document.lienhe.sdt.value="";
+document.lienhe.sdt.focus();
+return false;
+}
+if(nd.length==0){
+alert("Bạn chưa điền Nội dung");
+document.lienhe.nd.focus();
+return false;
+}
+alert("Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất!");
+return true;
+}
+</Script>
+	<style type="text/css">
+body{
+    font-family: Arial, Wingdings;
+    font-size: 16px;
+}
+#main{
+    width: auto;
+    padding: 0;
+    margin-left: auto;
+}
+#head{
+     height: 160px;
+     background-color: #f1f1f1;
+     border: 0px solid #CDCDCD;
+     line-height: 85px;
+}
+#head-1{
+     min-height: 20px;
+     line-height: 20px;
+     color: #da05ff;
+     border: 0px solid #CDCDCD;
+     padding-top: 15px;
+}
+#head-2{
+     min-height: 50px;
+     line-height: 50px;
+     border: 0px solid #CDCDCD;
+     font-size: 20px;
+     padding-left: 20px;
+}
+#head-3{
+     min-height: 0px;
+     border: 1px solid #050505;
+     font-size: 20px;
+}
+#head-link{
+     max-height: 30px;
+     line-height: 30px;
+     border: 0px solid #CDCDCD;
+     margin-bottom: 35px;
+     clear: both;
+}
+#left{
+     width: 500px;
+     min-height: 400px;
+     border: 1px solid #CDCDCD;
+     float:left;
+     background-color: #F5F5F5;
+     margin-left: 40px;
+     margin-bottom: 5px;
+}
+#content{
+     width: 860px;
+     min-height: 400px;
+     border: 1px solid #CDCDCD;
+     float:right;
+     margin-left: 5px;
+     margin-right: 45px;
+     margin-bottom: 5px;
+}
+#footer{
+     height: 50px;
+     line-height: 50px;
+     text-align: center;
+     font-size: 20px;
+     clear: both;
+     border: 1px solid #CDCDCD;
+     color: white;
+     background-color: black;
+}
+#head-link ul {
+  background: #F1F1F1;
+  list-style-type: none;
+  text-align: center;
+  padding-left: 200px;
+}
+#head-link li {
+  display: inline-block;
+  width: 180px;
+  height: 50px;
+  line-height: 50px;
+  border: 0px solid #CDCDCD;
+}
+#head-link ul li a {
+  color: #050505;
+  text-decoration: none;
+  display: block;
+}
+#head-link ul li a:hover {
+  background: white;
+  color: #d473fa;
+}
+#head-link ul li > .sub-head-link { 
+     display: none; 
+     position: absolute; 
+     padding: 0px 0px 0px 0px;
+     font-size: 14px;
+} 
+#head-link li {
+ position: relative;
+}
+#head-link ul li:hover .sub-head-link { 
+     background: #F1F1F1;
+     color: #d473fa;
+     display: block;
+}
+.sub-head-link { 
+     display: none; 
+     position: absolute; 
+} 
+#dong-lh{
+     background: #f7be4a;
+     color: white;
+     width: 480px;
+     min-height: 50px;
+     line-height: 50px;
+     border: 1px solid #CDCDCD;
+     float:left;
+     padding-left: 20px;
+     margin-bottom: 5px;
+}
+#Cot-lh1{
+     width: 150px;
+     min-height: 340px;
+     line-height: 340px;
+     border: 0px solid #CDCDCD;
+     float:left;
+     margin: 0px 0px 0px 25px;
+}
+#dong-lh1{
+     width: 540px;
+     max-height: 40px;
+     line-height: 40px;
+     border: 0px solid #CDCDCD;
+     margin-bottom: 5px;
+     clear: both;
+}
+#khung-content{
+     width: 840px;
+     min-height: 100px;
+     line-height: 100px;
+     border: 0px solid #CDCDCD;
+     margin: 0px 0px 10px 20px;
+     clear: both;
+}
+#dong-content{
+     background: #f7be4a;
+     color: white;
+     width: 840px;
+     min-height: 50px;
+     line-height: 50px;
+     border: 0px solid #CDCDCD;
+     float:left;
+     padding-left: 20px;
+     margin-bottom: 5px;
+}
+#Cot-content1{
+     width: 410px;
+     min-height: 100px;
+     line-height: 100px;    
+     border: 0px solid #CDCDCD;
+     float:left;
+     margin-bottom: 5px;
+}
+#Cot-content2{
+     width: 410px;
+     min-height: 100px;
+     line-height: 100px;    
+     border: 0px solid #CDCDCD;
+     float:right;
+     margin-left: 5px;
+     margin-bottom: 5px;
+}
+#dong-content-tn{
+     width: 840px;
+     min-height: 25px;
+     line-height: 25px;
+     border: 0px solid #CDCDCD;
+     margin-bottom: 10px;
+     clear: both;
+}
+#dong-content1{
+     width: 410px;
+     max-height: 20px;
+     line-height: 20px;
+     border: 0px solid #CDCDCD;  
+     margin-bottom: 0px;  
+     clear: both;
+}
+#dong-content2{
+     width: 410px;
+     max-height: 20px;
+     line-height: 20px;
+     border: 0px solid #CDCDCD;
+     margin-bottom: 10px;
+     clear: both;
+}
+#dong-content3{
+     width: 820px;
+     min-height: 10px;
+     line-height: 10px;
+     border: 0px solid #CDCDCD;
+     margin: 0px 20px 10px 0px;
+     clear: both;
+}
+#dong-content-gui{
+     width: 820px;
+     min-height: 25px;
+     line-height: 25px;
+     border: 0px solid #CDCDCD;
+     margin: 0px 20px 10px 0px;
+     clear: both;
+}
+button#nutgui{
+     width: 820px;
+     background:#333; 
+     color:#fff;
+     padding:5px; 
+     border-radius:25px;
+     font-size:15px;
+}
+button#nutgui:hover{
+     background:#0c0;
+}
+</style>
+</head>
+<body>
+<div id="main">
+     <div id="head">  
+          <a href="Bốn mùa Trái cây.html">        
+          <img src="anh.jpg" width="100%" height="100%"> 
+          </a>
+     </div>
+     <div id="head-1">  
+          <marquee>
+          Chào mừng đến với Website Bốn mùa trái cây
+          </marquee>       
+     </div>
+     <div id="head-link"><b>
+          <ul>
+               <a href="Bốn mùa Trái cây.html">
+               <img src="avata.jpg" width=50px height=50px align="center">
+               </a>
+               <li><a href="Bốn mùa Trái cây.html">Trang chủ</a></li>
+               <li><a href="#">Danh sách ▼</a>
+                    <ul class="sub-head-link">
+                         <li><a href="Trái cây mùa Xuân.html">Trái cây mùa Xuân</a></li>
+                         <li><a href="Trái cây mùa Hạ.html">Trái cây mùa Hạ</a></li>
+                         <li><a href="Trái cây mùa Thu.html">Trái cây mùa Thu</a></li>
+                         <li><a href="Trái cây mùa Đông.html">Trái cây mùa Đông</a></li>
+                    </ul>
+               </li>
+               <li><a href="Liên hệ.html">Liên hệ</a></li>
+               <li><a href="Đăng nhập.html">Đăng nhập</a></li>
+               <li><a href="Đăng ký.html">Đăng ký</a></li>
+          </ul></b>
+     </div>
+     <form name=lienhe method=post onSubmit="return kiemtra()">
+     <div id="head-2">
+          <b>LIÊN HỆ</b>        
+     </div>
+     <div id="head-3">         
+     </div>
+     <div id="left">
+          <div id="dong-lh">
+               <b>Thông tin liên hệ</b>                     
+          </div>
+          <div id="dong-lh1">
+               <ul type="disc">
+                    <li>: 0567 134 623</li>
+                    <li>:bonmuatraicay@gmail.com</li>
+               </ul>                    
+          </div>             
+     </div>
+     <div id="content">
+          <div id="dong-content"><b>Gửi tin nhắn cho chúng tôi</b>
+          </div>
+          <div id="khung-content">
+          <div id="dong-content-tn">
+               Nếu bạn có bất kỳ câu hỏi hào hây cần tư vấn có thể gửi tin nhắn cho website <b>Bốn mùa trái cây</b> ở đây. 
+               <br>Chúng tôi sẽ liên hệ bạn trong thời gian sớm nhất.</br>
+          </div>
+          <div id="Cot-content1">
+               <div id="dong-content1">
+                    Họ Tên:
+               </div>
+               <div id="dong-content2">
+                    <input type="text" name="txthoten" size="34">
+               </div>
+               <div id="dong-content1">
+                    Email:
+               </div>
+               <div id="dong-content2">
+                    <input type="text" name="em" size="34">
+               </div>
+          </div>
+          <div id="Cot-content2">
+               <div id="dong-content1">
+                    Địa chỉ:
+               </div>
+               <div id="dong-content2">
+                    <input type="text" name="dc" size="34">
+               </div>
+               <div id="dong-content1">
+                    Số điện thoại:
+               </div>
+               <div id="dong-content2">
+                    <input type="text" name="sdt" size="34">
+               </div>
+          </div>
+          <div id="dong-content1">
+                    Nội dung:
+               </div>
+          <div id="dong-content3">
+               <TEXTAREA rows="5" name="nd" cols="109"></TEXTAREA>
+          </div>
+          <div id="dong-content-gui">
+               <button id="nutgui">
+                    Gửi ngay cho chúng tôi
+               </button>
+          </div> 
+          </div>     
+     </div>    
+     <div id="footer">
+          Cảm ơn bạn đã ghé thăm Bốn Mùa Trái Cây và ủng hộ chúng tôi!
+     </div>
+</div>
+</body>
+</html>

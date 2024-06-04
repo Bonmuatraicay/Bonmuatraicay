@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Trái cây mùa Xuân</title>
+	<style type="text/css">
+body{
+    font-family: Arial, Tahoma, Wingdings;
+    font-size: 16px;
+}
+#main{
+    width: auto;
+    padding: 0;
+    margin-left: auto;
+}
+#head{
+    height: 160px;
+    background-color: #f1f1f1;
+    border: 0px solid #CDCDCD;
+    line-height: 85px;
+}
+#head-1{
+    min-height: 20px;
+    line-height: 20px;
+    color: #da05ff;
+    border: 0px solid #CDCDCD;
+    padding-top: 15px;
+}
+#head-link{
+    background: #ebebeb;
+    max-height: 20px;
+    line-height: 20px;
+    border: 0px solid #CDCDCD;
+    margin-bottom: 35px;
+    clear: both;
+}
+#left{
+    width: 234px;
+    min-height: 400px;
+    border: 0px solid #CDCDCD;
+    float:left;
+    margin-bottom: 5px;
+}
+#content{
+    width: 1208px;
+    min-height: 1400px;
+    border: 1px solid #CDCDCD;
+    float:right;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+#footer{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    clear: both;
+    border: 1px solid #CDCDCD;
+    color: white;
+    background-color: black;
+}
+#head-link ul {
+  	background: #f1f1f1;
+  	list-style-type: none;
+  	text-align: center;
+  	padding-left: 200px;
+}
+#head-link li {
+  	display: inline-block;
+  	width: 180px;
+  	height: 50px;
+  	line-height: 50px;
+ 	border: 0px solid #CDCDCD;
+}
+#head-link ul li a {
+  	color: #050505;
+  	text-decoration: none;
+  	display: block;
+}
+#head-link ul li a:hover {
+  	background: white;
+  	color: #d473fa;
+}
+#head-link ul li > .sub-head-link { 
+    display: none; 
+    position: absolute; 
+    padding: 0px 0px 0px 0px;
+    font-size: 14px;
+} 
+#head-link li {
+	position: relative;
+}
+#head-link ul li:hover .sub-head-link { 
+    background: #F1F1F1;
+    color: #d473fa;
+    display: block;
+}
+.sub-head-link { 
+    display: none; 
+    position: absolute; 
+} 
+#khung-left{
+    width: 234px;
+    min-height: 220px;
+    border: 1px solid #CDCDCD;
+    float:left;
+    margin-bottom: 5px;
+}
+#dong-left{
+    background: #f7be4a; 
+    color: white;   
+    width: 214px;
+    min-height: 50px;
+    line-height: 50px;
+    border: 1px solid #CDCDCD;
+    clear: both;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+#dong-left a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+#dong-left b a:hover {
+    color: #3c1a8a;
+    text-decoration: none;
+    display: block;
+}
+#dong-left1 a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+#dong-left1 a:hover {
+    background: white;
+    color: red;
+}
+#dong-left2 a {
+    background: #f1f1f1;
+    color: black;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 5px;
+}
+#dong-left2 a:hover {
+    background: white;
+    color: red;
+}
+#anh-left img{
+    width: 232px;
+    max-height: 100px;
+    border: 0px solid #CDCDCD;
+    clear: both;
+    margin-bottom: 0px;
+}
+#dong-content{
+    background: #f7be4a;
+    color: white;
+    width: 1186px;
+    min-height: 50px;
+    line-height: 50px;
+    border: 1px solid #CDCDCD;
+    float:left;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+#Cot-content1{
+    width: 1100px;
+    min-height: 200px;
+    line-height: 200px;    
+    border: 0px solid #CDCDCD;
+    float:left;
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+#dong-content1{
+    width: 1100px;
+    max-height: 30px;
+    line-height: 30px;
+    border: 0px solid #CDCDCD;
+    margin-bottom: 5px;
+    clear: both;
+}
+#dong-content1 b{
+	font-size: 18px;
+}
+#dong-content2{
+    width: 1100px;
+    min-height: 30px;
+    line-height: 30px;
+    border: 0px solid #CDCDCD;
+    margin-bottom: 5px;
+    clear: both;
+}
+#vedautrang{
+	width: 1100px;
+    max-height: 30px;
+    line-height: 30px;
+    border: 0px solid #CDCDCD;
+    margin-bottom: 5px;
+    text-align: right;
+    clear: both;
+}
+#nutve{
+	width: 30px;
+    max-height: 30px;
+    line-height: 30px;
+    background: #bdbdbd;
+    border: 0px solid #CDCDCD;
+    float:right;
+    text-align: center;
+}
+#nutve a {
+  	color: black;
+  	text-decoration: none;
+  	display: block;
+}
+#nutve a:hover {
+  	background: black;
+  	color: white;
+}
+#anh{
+    width: 800px;
+    min-height: 400px;
+    line-height: 400px;
+    border: 1px solid #CDCDCD;
+    margin: 0px 150px 5px 150px;
+    clear: both;
+}
+#anh img {
+	width: 800px;
+	max-height: 400px;
+  	display: block;
+}
+</style>
+</head>
+<body>
+<a name="dt">
+<div id="main">
+    <div id="head">  
+        <a href="Bốn mùa Trái cây.html">        
+        <img src="anh.jpg" width="100%" height="100%"> 
+        </a>
+    </div>
+    <div id="head-1"> 
+        <marquee>
+        Chào mừng đến với Website Bốn mùa trái cây
+        </marquee>        
+    </div>
+    <div id="head-link"><b>
+        <ul>
+            <a href="Bốn mùa Trái cây.html">
+            <img src="avata.jpg" width=50px height=50px align="center">
+            </a>
+             	<li><a href="Bốn mùa Trái cây.html">Trang chủ</a></li>
+               	<li><a href="#">Danh sách ▼</a>
+                    <ul class="sub-head-link">
+                        <li><a href="Trái cây mùa Xuân.html">Trái cây mùa Xuân</a></li>
+                        <li><a href="Trái cây mùa Hạ.html">Trái cây mùa Hạ</a></li>
+                        <li><a href="Trái cây mùa Thu.html">Trái cây mùa Thu</a></li>
+                        <li><a href="Trái cây mùa Đông.html">Trái cây mùa Đông</a></li>
+                    </ul>
+                </li>
+                <li><a href="Liên hệ.html">Liên hệ</a></li>
+               <li><a href="Đăng nhập.html">Đăng nhập</a></li>
+               <li><a href="Đăng ký.html">Đăng ký</a></li>
+            </ul></b>
+    </div>
+    <div id="left">
+        <div id="khung-left">
+       	<div id="dong-left">
+           <b>‖ Mục lục</b>
+        </div>
+        <div id="dong-left1">
+            <ol type="I">
+               	<li><a href="#T1">Tháng 1</a>
+                    <ol type="1">
+                    	<li><a href="#I.1">Táo</a></li>
+                    	<li><a href="#I.2">Bưởi</a></li>
+                    	<li><a href="#I.3">Cam</a></li>
+                    </ol>
+                </li>
+                <li><a href="#T2">Tháng 2</a>
+                    <ol type="1">
+                    	<li><a href="#II.1">Mãng cầu</a></li>
+                    	<li><a href="#II.2">Mận cơm xanh</a></li>
+                    	<li><a href="#II.3">Xoài xanh</a></li>
+                    </ol>
+                </li>
+                <li><a href="#T3">Tháng 3</a>
+                    <ol type="1">
+                    	<li><a href="#III.1">Vú sữa</a></li>
+                    	<li><a href="#III.2">Đu đủ</a></li>
+                    	<li><a href="#III.3">Ổi</a></li>
+                    </ol>
+                </li>                
+            </ol>
+        </div> 
+        </div>
+        <div id="khung-left">
+            <div id="dong-left">
+                <b><a href="bai viet moi nhat.html"> Bài viết mới nhất</a></b>
+            </div>
+            <div id="dong-left2">
+                <a href="Top 5 loại trái cây tốt nhất cho sức khỏe.html">
+                    <div id="anh-left">
+                        <img src="top 5 trai cay tot cho suc khoe.png">
+                    </div>
+                    Top 5 loại trái cây tốt nhất cho sức khỏe
+                </a>
+            </div>
+            <div id="dong-left2">
+                <a href="Top 5 lợi ích sức khỏe của việc ăn trái cây mỗi ngày.html">
+                    <div id="anh-left">
+                        <img src="top 5 loi ich suc khoe.jpg">
+                    </div>
+                    Top 5 lợi ích sức khỏe của việc ăn trái cây mỗi ngày
+                </a>
+            </div>
+        </div>    
+    </div>
+    <div id="content">
+        <div id="dong-content"><b>‖ Trái cây mùa Xuân</b>
+        </div>
+        <div id="Cot-content1">
+        	<div id="anh">
+        		<img src="trai-cay-mua-xuan.png">
+        	</div>
+          	<div id="dong-content1">
+          		<a name="T1">
+               	<b>I. Tháng 1</b>
+            </div>
+            <div id="dong-content1">
+            	<a name="I.1">
+               	<b>1. Táo</b>
+            </div>
+            <div id="dong-content2">
+            	Táo là một loại quả hầu như có quanh năm, trái cây này có rất nhiều tác dụng như phòng chống ung thư, tốt cho hệ tiêu hoá, cho xương, ngăn ngừa nguy cơ mắc các bệnh về đường hô hấp….Trong táo còn có chứa  vitamin A, E, B1, B2, B6 và chất chống oxy hóa tốt cho sức khỏe.
+				<p>Ngoài ra, ăn táo còn giúp đẹp da và giảm cân. Vì vậy đây là loại quả ưu tiên số 1 đối với các chị em phụ nữ.</p>
+            </div>
+            <div id="anh">
+        		<img src="tao.jpg">
+        	</div>
+            <div id="dong-content1">
+            	<a name="I.2">
+               	<b>2. Bưởi</b>
+            </div>
+            <div id="dong-content2">
+            	Bưởi là trái cây chứa nhiều vitamin có lợi cho sức khỏe. Đây là loại quả không chỉ bổ dưỡng cơ thể mà còn là một vị thuốc quý. 
+            	<p>Bưởi bổ sung vitamin C làm tăng sức đề kháng của cơ thể, chống oxy hóa, giảm stress, các bệnh liên quan với hen suyễn và viêm khớp. Với lượng vitamin A, vitamin C cao, bưởi giúp duy trì đủ độ ẩm trong da, bảo vệ da khỏi bị khô, bệnh vảy nến, mụn trứng cá và nếp nhăn.</p>
+            </div>
+            <div id="anh">
+        		<img src="buoi.jpg">
+        	</div>
+            <div id="dong-content1">
+            	<a name="I.3">
+               	<b>3. Cam</b>
+            </div>
+            <div id="dong-content2">
+            	Nếu bạn vẫn đang thắc mắc tháng 1 có quả gì ngon thì cam là một vài gợi ý dành cho bạn. Một quả cam cung cấp cho cơ thể 130% nhu cầu vitamin C trong ngày, 2% nhu cầu vitamin A, 6% canxi và 0% chất sắt.
+            	<p>Cam được biết đến là một loại quả có nhiều công dụng tuyệt vời cho sức khỏe nhưng điển hình nhất là giúp duy trì huyết áp ổn định và giảm nguy cơ đột quỵ.</p>
+				<p>Theo đó số lượng người bị đột quỵ do thiếu máu cục bộ vì ăn ít cam cao hơn đến 19% so với những người ăn cam thường xuyên.</p>
+            </div>
+            <div id="anh">
+        		<img src="cam.jpg">
+        	</div>
+            <div id="dong-content1">
+            	<a name="T2">
+               	<b>II. Tháng 2</b>
+            </div>
+            <div id="dong-content1">
+            	<a name="II.1">
+               	<b>1. Mãng cầu</b>
+            </div>
+            <div id="dong-content2">
+            	Mãng cầu ta có thể hỗ trợ dạ dày tiêu hóa tốt hơn nhờ vào thành phần chất xơ có trong chúng. Ngoài ra, chúng còn giúp loại bỏ những độc tố thừa thải từ ruột, làm giảm nguy cơ mắc chứng táo bón, viêm dạ dày, ợ nóng, đau dạ dày,…
+            </div>
+            <div id="anh">
+        		<img src="mang cau.jpg">
+        	</div>
+            <div id="dong-content1">
+            	<a name="II.2">
+               	<b>2. Mận cơm xanh</b>
+            </div>
+            <div id="dong-content2">
+            	Ở Hà Nội có tới 2 mùa mận là mùa mận xanh và mùa mận chín. Nhưng nếu như mận hậu phải tới tận tháng 5,6 mới vào chính vụ thì ngay từ cuối tháng 2 nhiều người Hà thành đã phát cuồng vì những gánh hàng rong bán mận xanh trên phố.
+            	<p>Tuy nhiên vì là đầu mùa nên giá mận xanh khá đắt đỏ và rất có khả năng những người bán hàng vì lợi nhuận mà phun chất kích thích để bán được giá. Vì vậy khi chọn mua mận trong tháng 2 này, bạn nên chọn mua ở những địa chỉ uy tín, có xuất xứ rõ ràng và đừng quên ngâm nước muối thật kỹ và rửa sạch trước khi ăn nhé.</p>
+            </div>
+            <div id="anh">
+        		<img src="man com xanh.jpg">
+        	</div>
+            <div id="dong-content1">
+            	<a name="II.3">
+               	<b>3. Xoài xanh</b>
+            </div>
+            <div id="dong-content2">
+            	Xoài xanh là một trong những loại quả được nhiều chị em săn lùng. Xoài xanh chua chua, rôn rốt chắc chắn là loại trái cây tháng 2 được nhiều người yêu thích, tìm kiếm. Xoài xanh được bán nhiều những ngày cuối tháng 2. Bởi sang đến tháng 4,5 xoài sẽ chín vàng và mềm thơm.
+				<p>Những quả xoài xanh có mùi thơm, thịt quả dày, màu thịt vàng hoặc trắng. Khi ăn rất giòn nên dễ ăn và mê hoặc mọi đối tượng.</p>
+            </div>
+            <div id="anh">
+        		<img src="xoai xanh.jpg">
+        	</div>
+            <div id="dong-content1">
+            	<a name="T3">
+               	<b>III. Tháng 3</b>
+            </div>
+            <div id="dong-content1">
+            	<a name="III.1">
+               	<b>1. Vú sữa</b>
+            </div>
+            <div id="dong-content2">
+            	Vú sữa là một loại quả hấp dẫn với hương thơm và vị hoàn hảo không thể bỏ qua. Vú sữa được thu hoạch vào những ngày đầu tháng 3. Quả vú sữa trắng, hồng, mòng mọng trông thật ngon mắt và hấp dẫn. Lớp thịt quả mềm, khi ăn có vị thơm mát, ngọt thanh rất thích hợp để mua làm quà biếu hoặc mua để ăn.
+            	<p>Không chỉ ghi điểm bởi hương vị khó quên, trái vú sữa còn “tiềm ẩn” một hàm lượng khoáng chất vô cùng ấn tượng, bao gồm: vitamin B1, B3, C, protein, photpho, lysin, tryptophan,… đặc biệt là có chứa thành phần axit malic, chất này có tác dụng phòng ngừa bệnh nám da và kháng khuẩn.</p> 
+				<p>Ngoài ra vú sữa còn có khả năng cải thiện sức khỏe hiệu quả, tốt cho hệ tiêu hóa, tăng cường miễn dịch, ngăn ngừa bệnh thiếu máu, hỗ trợ giảm cân,…</p>
+            </div>
+            <div id="anh">
+        		<img src="vu sua.jpg">
+        	</div>
+            <div id="dong-content1">
+            	<a name="III.2">
+               	<b>2. Đu đủ</b>
+            </div>
+            <div id="dong-content2">
+            	Đu đủ lúc chín có vị ngọt rất thanh, kèm theo mùi hương hấp dẫn nên cực kỳ gây nghiện. Cùng với mùi vị tuyệt vời, quả đu đủ còn sở hữu giá trị dinh dưỡng cao, bổ sung đu đủ vào chế độ ăn uống hàng ngày rất tốt cho hoạt động của các cơ quan trong cơ thể, đặc biệt là tim mạch và hệ tiêu hóa.
+            	<p>Ngoài ra, loại quả này còn có khả năng ngăn chặn và đẩy lùi sự hình thành của các tế bào ung thư, bổ mắt và tăng kích thước vòng 1 ở nữ giới. Đó cũng chính là lý do mà mỗi khi đứng trước thắc mắc “tháng 3 là mùa trái cây gì”, người ta sẽ không thể nào "làm lơ" được trước sức hút khó chối từ của đu đủ.</p>
+            </div>
+            <div id="anh">
+        		<img src="du du.jpg">
+        	</div>
+            <div id="dong-content1">
+            	<a name="III.3">
+               	<b>3. Ổi</b>
+            </div>
+            <div id="dong-content2">
+            	Ổi là loại trái cây đặc trưng với giá trị dinh dưỡng cao, ít chất béo bão hoà, cholesterol và natri, chứa nhiều chất xơ, vitamin C, A, kẽm, kali và mangan giúp bảo vệ và tăng sức đề kháng, bảo vệ sức khỏe, làm đẹp da và ngăn ngừa được các bệnh ung thư cũng như hỗ trợ tiêu hóa cực kỳ tốt. Đặc biệt uống nước ép ổi hằng ngày tốt cho người suy nhược cơ thể.
+            	<p>Một điểm mà rất ít người biết được đó là ổi chứa nhiều vitamin C hơn so với Cam, quýt.</p>
+            </div>
+            <div id="anh">
+        		<img src="oi.jpg">
+        	</div>           
+            <div id="vedautrang">
+            	<div id="nutve">
+            		<a href="#dt"><b></b></a>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        Cảm ơn bạn đã ghé thăm Bốn Mùa Trái Cây và ủng hộ chúng tôi!
+    </div>
+</div>
+</body>
+</html>
